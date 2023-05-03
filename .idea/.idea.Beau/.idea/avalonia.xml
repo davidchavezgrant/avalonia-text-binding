@@ -7,8 +7,10 @@
         <entry key="src/Beau.Client.Mobile/Beau.Client.Mobile/Views/MainView.axaml" value="src/Beau.Client.Mobile/Beau.Client.Mobile.Browser/Beau.Client.Mobile.Browser.csproj" />
         <entry key="src/Beau.Client.Mobile/Beau.Client.Mobile/Views/MainWindow.axaml" value="src/Beau.Client.Mobile/Beau.Client.Mobile.Browser/Beau.Client.Mobile.Browser.csproj" />
         <entry key="src/Beau.Client/App.axaml" value="src/Beau.Client/Beau.Client.csproj" />
-        <entry key="src/Beau.Client/Beau.Client/App.axaml" value="src/Beau.Client/Beau.Client.Browser/Beau.Client.Browser.csproj" />
+        <entry key="src/Beau.Client/Beau.Client/App.axaml" value="src/Beau.Client/Beau.Client.Desktop/Beau.Client.Desktop.csproj" />
         <entry key="src/Beau.Client/Beau.Client/Views/MainView.axaml" value="src/Beau.Client/Beau.Client.Desktop/Beau.Client.Desktop.csproj" />
+        <entry key="src/Beau.Client/Beau.Client/Views/MainViewMobile.axaml" value="src/Beau.Client/Beau.Client.Desktop/Beau.Client.Desktop.csproj" />
+        <entry key="src/Beau.Client/Beau.Client/Views/MainWindow.axaml" value="src/Beau.Client/Beau.Client.Desktop/Beau.Client.Desktop.csproj" />
         <entry key="src/Beau.Client/Views/MainWindow.axaml" value="src/Beau.Client/Beau.Client.csproj" />
       </map>
     </option>
