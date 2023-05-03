@@ -12,27 +12,26 @@
         <vm:MainViewModel />
     </Design.DataContext>
 
-    <StackPanel Background="Black">
-        <Rectangle Height="40" Fill="Orange"></Rectangle>
+    <Grid Background="Black" RowDefinitions="Auto, Auto, *, Auto">
+        <Rectangle Grid.Row="0" Height="40" Fill="Orange"></Rectangle>
         <!-- Title bar-->
-        <Grid Background="Orange" Height="40" ColumnDefinitions="Auto, Auto, *, Auto, Auto">
+        <Grid Grid.Row="1" Background="Orange" Height="40" ColumnDefinitions="Auto, Auto, *, Auto, Auto">
             <Rectangle Grid.Column="0" Fill="Red" Width="40"></Rectangle>
             <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="2" >
                 <Label FontWeight="Black">AVALONIA</Label>
-                <Label>ELEMENT</Label>
             </StackPanel>
             <Rectangle Grid.Column="4" Fill="Yellow" Width="40"></Rectangle>
         </Grid>
 
         <!-- Main Area-->
-        <Grid>
+        <Grid Grid.Row="2">
             <Rectangle Height="700" Fill="Black"></Rectangle>
         </Grid>
 
         <!-- Bottom Bar -->
-        <Grid>
+        <Grid Grid.Row="3">
             <Rectangle Height="40" Fill="Orange"></Rectangle>
         </Grid>
-    </StackPanel>
+    </Grid>
 
 </UserControl>
