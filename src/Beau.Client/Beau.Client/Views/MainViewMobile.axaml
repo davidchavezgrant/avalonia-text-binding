@@ -5,33 +5,57 @@
              xmlns:vm="clr-namespace:Beau.Client.ViewModels"
              mc:Ignorable="d" d:DesignWidth="390" d:DesignHeight="844"
              x:Class="Beau.Client.Views.MainViewMobile"
-             x:DataType="vm:MainViewModel">
+             x:DataType="vm:MainViewModel"
+             Background="#FADADD">
     <Design.DataContext>
         <!-- This only sets the DataContext for the previewer in an IDE,
          to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
         <vm:MainViewModel />
     </Design.DataContext>
+    <Grid x:Name="MainGrid">
+        <Image x:Name="Logo"
+               Source="/Assets/beau.png"
+               Width="200"
+               Height="200"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Top"
+               Margin="0,50,0,0"
+               Opacity="0">
+            <Image.Transitions>
+                <Transitions>
+                    <DoubleTransition Property="Opacity" Duration="0:0:1" />
+                </Transitions>
+            </Image.Transitions>
+        </Image>
 
-    <Grid Background="Black" RowDefinitions="Auto, Auto, *, Auto">
-        <Rectangle Grid.Row="0" Height="40" Fill="Orange"></Rectangle>
-        <!-- Title bar-->
-        <Grid Grid.Row="1" Background="Orange" Height="40" ColumnDefinitions="Auto, Auto, *, Auto, Auto">
-            <Rectangle Grid.Column="0" Fill="Red" Width="40"></Rectangle>
-            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="2" >
-                <Label FontWeight="Black">AVALONIA</Label>
-            </StackPanel>
-            <Rectangle Grid.Column="4" Fill="Yellow" Width="40"></Rectangle>
-        </Grid>
+        <Button x:Name="SignInButton"
+                Content="Sign In"
+                Width="150"
+                Height="50"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Opacity="0">
+            <Button.Transitions>
+                <Transitions>
+                    <DoubleTransition Property="Opacity" Duration="0:0:1" />
+                </Transitions>
+            </Button.Transitions>
+        </Button>
 
-        <!-- Main Area-->
-        <Grid Grid.Row="2">
-            <Rectangle Height="700" Fill="Black"></Rectangle>
-        </Grid>
-
-        <!-- Bottom Bar -->
-        <Grid Grid.Row="3">
-            <Rectangle Height="40" Fill="Orange"></Rectangle>
-        </Grid>
+        <Button x:Name="SignUpButton"
+                Content="Sign Up"
+                Width="150"
+                Height="50"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Margin="0,80,0,0"
+                Opacity="0">
+            <Button.Transitions>
+                <Transitions>
+                    <DoubleTransition Property="Opacity" Duration="0:0:1" />
+                </Transitions>
+            </Button.Transitions>
+        </Button>
     </Grid>
 
 </UserControl>
