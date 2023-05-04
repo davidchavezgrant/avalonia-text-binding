@@ -3,13 +3,33 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:vm="clr-namespace:Beau.Client.ViewModels"
+             xmlns:views="clr-namespace:Beau.Client.Views"
              mc:Ignorable="d" d:DesignWidth="390" d:DesignHeight="844"
              x:Class="Beau.Client.Views.MainViewMobile"
              x:DataType="vm:MainViewModel"
-             Background="#FADADD">
+             Background="#ffe1e9">
     <Design.DataContext>
         <vm:MainViewModel />
     </Design.DataContext>
+
+    <UserControl.Styles>
+        <Style Selector="Button.standard">
+            <Setter Property="HorizontalAlignment" Value="Center" />
+            <Setter Property="HorizontalContentAlignment" Value="Center" />
+            <Setter Property="VerticalContentAlignment" Value="Center" />
+            <Setter Property="Background" Value="#FFFFFF" />
+            <Setter Property="BorderBrush" Value="#8c8273" />
+            <Setter Property="BorderThickness" Value="1" />
+            <Setter Property="CornerRadius" Value="6" />
+            <Setter Property="Padding" Value="12 8 12 8" />
+            <Setter Property="Margin" Value="5" />
+            <Setter Property="FontFamily" Value="/Assets/Fonts/Futura/futura medium bt.ttf#Futura" />
+            <Setter Property="FontSize" Value="14" />
+            <Setter Property="FontWeight" Value="Medium" />
+
+        </Style>
+    </UserControl.Styles>
+
     <Grid x:Name="MainGrid">
         <Grid.RowDefinitions>
             <RowDefinition Height="1*" />
@@ -30,29 +50,26 @@
                 </Transitions>
             </Image.Transitions>
         </Image>
-
-        <Button x:Name="SignInButton"
-                Content="Sign In"
-                Width="150"
-                Height="50"
-                HorizontalAlignment="Center"
-                Grid.Row="1"
-                Opacity="0">
-            <Button.Transitions>
-                <Transitions>
-                    <DoubleTransition Property="Opacity" Duration="0:0:1" />
-                </Transitions>
-            </Button.Transitions>
-        </Button>
+        <UserControl Grid.Row="1" >
+            <Border BoxShadow="5 5 10 2 Black">
+                <Button x:Name="SignInButton"
+                        Content="Apply Now"
+                        Opacity="0"
+                        Classes="standard">
+                    <Button.Transitions>
+                        <Transitions>
+                            <DoubleTransition Property="Opacity" Duration="0:0:1" />
+                        </Transitions>
+                    </Button.Transitions>
+                </Button>
+            </Border>
+        </UserControl>
 
         <Button x:Name="SignUpButton"
                 Content="Sign Up"
-                Width="150"
-                Height="50"
-                HorizontalAlignment="Center"
                 Grid.Row="2"
-                Margin="0,80,0,0"
-                Opacity="0">
+                Opacity="0"
+                Classes="standard">
             <Button.Transitions>
                 <Transitions>
                     <DoubleTransition Property="Opacity" Duration="0:0:1" />

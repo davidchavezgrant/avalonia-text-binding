@@ -4,6 +4,7 @@ using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
 using Avalonia.Animation;
 using Avalonia.Threading;
+using SkiaSharp;
 
 
 namespace Beau.Client.Views;
@@ -22,7 +23,7 @@ public partial class MainViewMobile: UserControl
         var signInButton = this.FindControl<Button>("SignInButton");
         var signUpButton = this.FindControl<Button>("SignUpButton");
 
-        if(logo == null || signInButton == null || signUpButton == null)
+        if (logo == null || signInButton == null || signUpButton == null)
             return;
 
         // Logo fade-in animation
