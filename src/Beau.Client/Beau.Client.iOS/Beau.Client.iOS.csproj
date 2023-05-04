@@ -7,8 +7,6 @@
     <ProvisioningType>automatic</ProvisioningType>
     <Nullable>enable</Nullable>
     <RuntimeIdentifier>iossimulator-x64</RuntimeIdentifier>
-    <RuntimeIdentifier>ios-arm64</RuntimeIdentifier>
-    <CodesignKey>Apple Development: David Grant (ZWBR857W42)</CodesignKey>
   </PropertyGroup>
 
   <ItemGroup>

@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
-        <TargetFramework>net7.0</TargetFramework>
+        <TargetFrameworks>net7.0;net7.0-ios</TargetFrameworks>
         <Nullable>enable</Nullable>
         <LangVersion>latest</LangVersion>
         <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
@@ -8,22 +8,28 @@
 
 
     <ItemGroup>
-        <AvaloniaResource Include="Assets\**"/>
+        <AvaloniaResource Include="Assets\**" />
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="Avalonia" Version="$(AvaloniaVersion)"/>
-        <PackageReference Include="Avalonia.Themes.Fluent" Version="$(AvaloniaVersion)"/>
-        <PackageReference Include="Avalonia.ReactiveUI" Version="$(AvaloniaVersion)"/>
+        <PackageReference Include="Avalonia" Version="$(AvaloniaVersion)" />
+        <PackageReference Include="Avalonia.Themes.Fluent" Version="$(AvaloniaVersion)" />
+        <PackageReference Include="Avalonia.ReactiveUI" Version="$(AvaloniaVersion)" />
         <!--Condition below is needed to remove Avalonia.Diagnostics package from build output in Release configuration.-->
-        <PackageReference Condition="'$(Configuration)' == 'Debug'" Include="Avalonia.Diagnostics" Version="$(AvaloniaVersion)"/>
-        <PackageReference Include="SkiaSharp" Version="2.88.1"/>
-        <PackageReference Include="XamlNameReferenceGenerator" Version="1.6.1"/>
-        <PackageReference Include="NXUI" Version="11.0.0-preview5"/>
+        <PackageReference Condition="'$(Configuration)' == 'Debug'" Include="Avalonia.Diagnostics" Version="$(AvaloniaVersion)" />
+        <PackageReference Include="SkiaSharp" Version="2.88.1" />
+        <PackageReference Include="XamlNameReferenceGenerator" Version="1.6.1" />
+        <PackageReference Include="NXUI" Version="11.0.0-preview5" />
 
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\..\Beau.Contracts\Beau.Contracts.csproj"/>
+        <ProjectReference Include="..\..\Beau.Contracts\Beau.Contracts.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="Microsoft.iOS">
+        <HintPath>..\..\..\..\..\..\..\usr\local\share\dotnet\packs\Microsoft.iOS.Ref\16.2.2054\ref\net7.0\Microsoft.iOS.dll</HintPath>
+      </Reference>
     </ItemGroup>
 </Project>

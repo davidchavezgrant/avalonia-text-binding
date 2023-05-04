@@ -4,6 +4,7 @@ using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
 using Avalonia.Animation;
 using Avalonia.Threading;
+using Contacts;
 using SkiaSharp;
 
 
@@ -14,7 +15,21 @@ public partial class MainViewMobile: UserControl
     public MainViewMobile()
     {
         InitializeComponent();
+        this.CreateAccountButton.Click +=(_,_) => this.Click();
         StartAnimations();
+    }
+
+    void Click()
+    {
+        var contact = new CNMutableContact();
+        contact.GivenName = "John";
+        contact.FamilyName = "Appleseed";
+
+        var store = new CNContactStore();
+        var saveRequest = new CNSaveRequest();
+        saveRequest.AddContact(contact, null);
+        store.ExecuteSaveRequest(saveRequest, out var error);
+
     }
 
     private async void StartAnimations()
