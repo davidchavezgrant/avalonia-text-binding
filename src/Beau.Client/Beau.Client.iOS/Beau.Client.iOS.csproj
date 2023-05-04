@@ -1,19 +1,38 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>net7.0-ios</TargetFramework>
-    <SupportedOSPlatformVersion>10.0</SupportedOSPlatformVersion>
-    <UseInterpreter>True</UseInterpreter>
-    <ProvisioningType>automatic</ProvisioningType>
-    <Nullable>enable</Nullable>
-    <RuntimeIdentifier>iossimulator-x64</RuntimeIdentifier>
-  </PropertyGroup>
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net7.0-ios</TargetFramework>
+        <SupportedOSPlatformVersion>10.0</SupportedOSPlatformVersion>
+        <UseInterpreter>True</UseInterpreter>
+        <ProvisioningType>automatic</ProvisioningType>
+        <Nullable>enable</Nullable>
+        <RuntimeIdentifier>iossimulator-x64</RuntimeIdentifier>
+        <ApplicationId>by.lines.beau</ApplicationId>
+    </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Avalonia.iOS" Version="$(AvaloniaVersion)" />
-  </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="Avalonia.iOS" Version="$(AvaloniaVersion)"/>
+    </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\Beau.Client\Beau.Client.csproj" />
-  </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\Beau.Client\Beau.Client.csproj"/>
+    </ItemGroup>
+    <PropertyGroup>
+        <IncludeKeys Condition="'$(IncludeKeys)' == ''">true</IncludeKeys>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net7.0-ios|AnyCPU' and $(IncludeKeys)">
+        <RuntimeIdentifier>ios-arm64</RuntimeIdentifier>
+        <!-- Only needed when you have a need for entitlements -->
+        <!-- <CodesignEntitlement>Entitlements.plist</CodesignEntitlement> -->
+        <CodesignKey>Apple Distribution: Bylines, Inc. (K4ACR28WR6)</CodesignKey>
+        <CodesignProvision>beau-dist</CodesignProvision>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net7.0-ios|AnyCPU' and $(IncludeKeys)">
+        <RuntimeIdentifier>ios-arm64</RuntimeIdentifier>
+        <!-- Only needed when you have a need for entitlements -->
+        <!-- <CodesignEntitlement>Entitlements.plist</CodesignEntitlement> -->
+        <CodesignKey>Apple Development: David Grant (ZWBR857W42)</CodesignKey>
+        <CodesignProvision>beau-dev</CodesignProvision>
+    </PropertyGroup>
+
 </Project>
