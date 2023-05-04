@@ -19,9 +19,9 @@ public partial class MainViewMobile: UserControl
 
     private async void StartAnimations()
     {
-        var logo         = this.FindControl<Image>("Logo");
-        var signInButton = this.FindControl<Button>("SignInButton");
-        var signUpButton = this.FindControl<Button>("SignUpButton");
+        var logo         = this.FindControl<Image>(nameof(this.Logo));
+        var signInButton = this.FindControl<Button>(nameof(this.SignInButton));
+        var signUpButton = this.FindControl<Button>(nameof(this.CreateAccountButton));
 
         if (logo == null || signInButton == null || signUpButton == null)
             return;
@@ -29,14 +29,14 @@ public partial class MainViewMobile: UserControl
         // Logo fade-in animation
         await Dispatcher.UIThread.InvokeAsync(async () =>
                                               {
-                                                  await Task.Delay(1000); // Wait for 1 second
+                                                  await Task.Delay(1000);
                                                   logo.Opacity = 1;
                                               });
 
         // Buttons fade-in animation
         await Dispatcher.UIThread.InvokeAsync(async () =>
                                               {
-                                                  await Task.Delay(2000); // Wait for 2 seconds
+                                                  await Task.Delay(1000);
                                                   signInButton.Opacity = 1;
                                                   signUpButton.Opacity = 1;
                                               });
