@@ -5,6 +5,7 @@ using Avalonia.Markup.Xaml;
 using Avalonia.Animation;
 using Avalonia.Threading;
 using Contacts;
+using Microsoft.Maui.Devices;
 using SkiaSharp;
 
 
@@ -21,6 +22,7 @@ public partial class MainViewMobile: UserControl
 
     void Click()
     {
+        HapticFeedback.Perform(HapticFeedbackType.Click);
         var contact = new CNMutableContact();
         contact.GivenName = "John";
         contact.FamilyName = "Appleseed";

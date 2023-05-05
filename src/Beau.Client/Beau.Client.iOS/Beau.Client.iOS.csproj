@@ -8,6 +8,8 @@
         <Nullable>enable</Nullable>
         <RuntimeIdentifier>iossimulator-x64</RuntimeIdentifier>
         <ApplicationId>by.lines.beau</ApplicationId>
+        <UseMaui>true</UseMaui>
+        <UseMauiEsssentials>true</UseMauiEsssentials>
     </PropertyGroup>
 
     <ItemGroup>
