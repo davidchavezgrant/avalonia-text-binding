@@ -44,7 +44,7 @@
         <key>UIViewControllerBasedStatusBarAppearance</key>
         <false/>
         <key>NSContactsUsageDescription</key>
-        <string>Beau needs access to your contacts to find your friends.</string>
+        <string>Bylines needs access to your contacts to find your friends.</string>
         <key>XSAppIconAssets</key>
         <string>Assets.xcassets/AppIcon.appiconset</string>
     </dict>

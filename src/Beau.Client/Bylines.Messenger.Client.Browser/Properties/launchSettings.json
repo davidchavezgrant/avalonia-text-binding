@@ -1,6 +1,6 @@
 {
   "profiles": {
-    "Beau.Client.Browser": {
+    "Bylines.Messenger.Client.Browser": {
       "commandName": "Project",
       "launchBrowser": true,
       "environmentVariables": {
