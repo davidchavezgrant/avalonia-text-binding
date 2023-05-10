@@ -7,6 +7,6 @@
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="Beau.Client.Views.MainWindow"
         Icon="/Assets/avalonia-logo.ico"
-        Title="Beau.Client">
+        Title="Bylines.Messenger.Client">
         <views:MainWindow />
 </Window>

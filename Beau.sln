@@ -5,17 +5,17 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{BF8F37C6-4BB0-4ADA-B3CD-3E6CB4744C57}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Beau.Client", "Beau.Client", "{9C94A46C-05BC-44DE-B3CF-5DE64F26C516}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bylines.Messenger.Client", "Bylines.Messenger.Client", "{9C94A46C-05BC-44DE-B3CF-5DE64F26C516}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Beau.Client.Android", "src\Beau.Client\Beau.Client.Android\Beau.Client.Android.csproj", "{21F12D4B-8DA4-4657-BB2C-2D9915B7AE60}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bylines.Messenger.Client.Android", "src\Beau.Client\Bylines.Messenger.Client.Android\Bylines.Messenger.Client.Android.csproj", "{21F12D4B-8DA4-4657-BB2C-2D9915B7AE60}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Beau.Client.Browser", "src\Beau.Client\Beau.Client.Browser\Beau.Client.Browser.csproj", "{F4E8126D-B03D-44B2-A9C5-3B4FA770FDC6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bylines.Messenger.Client.Browser", "src\Beau.Client\Bylines.Messenger.Client.Browser\Bylines.Messenger.Client.Browser.csproj", "{F4E8126D-B03D-44B2-A9C5-3B4FA770FDC6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Beau.Client.Desktop", "src\Beau.Client\Beau.Client.Desktop\Beau.Client.Desktop.csproj", "{4C3072C9-9AFB-431D-8E93-7E31BFBD3B12}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bylines.Messenger.Client.Desktop", "src\Beau.Client\Bylines.Messenger.Client.Desktop\Bylines.Messenger.Client.Desktop.csproj", "{4C3072C9-9AFB-431D-8E93-7E31BFBD3B12}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Beau.Client.iOS", "src\Beau.Client\Beau.Client.iOS\Beau.Client.iOS.csproj", "{1A254702-CC02-4872-8475-3FB96C57C775}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bylines.Messenger.Client.iOS", "src\Beau.Client\Bylines.Messenger.Client.iOS\Bylines.Messenger.Client.iOS.csproj", "{1A254702-CC02-4872-8475-3FB96C57C775}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Beau.Client", "src\Beau.Client\Beau.Client\Beau.Client.csproj", "{532A8D90-7700-4A53-ABFC-6BCD1B858CA4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bylines.Messenger.Client", "src\Beau.Client\Bylines.Messenger.Client\Bylines.Messenger.Client.csproj", "{532A8D90-7700-4A53-ABFC-6BCD1B858CA4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Beau.Api", "src\Beau.Api\Beau.Api.csproj", "{E146CED2-EBD4-4253-8F71-2CB1963C36E1}"
 EndProject

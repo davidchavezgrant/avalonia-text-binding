@@ -10,14 +10,15 @@
         <ApplicationId>by.lines.beau</ApplicationId>
         <UseMaui>true</UseMaui>
         <UseMauiEsssentials>true</UseMauiEsssentials>
+        <RootNamespace>Bylines.Messenger.Client.iOS</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Avalonia.iOS" Version="$(AvaloniaVersion)"/>
+        <PackageReference Include="Avalonia.iOS" Version="$(AvaloniaVersion)" />
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\Beau.Client\Beau.Client.csproj"/>
+        <ProjectReference Include="..\Bylines.Messenger.Client\Bylines.Messenger.Client.csproj" />
     </ItemGroup>
     <PropertyGroup>
         <IncludeKeys Condition="'$(IncludeKeys)' == ''">false</IncludeKeys>

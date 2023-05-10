@@ -6,6 +6,7 @@
         <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
         <UseMaui>true</UseMaui>
         <UseMauiEssentials>true</UseMauiEssentials>
+        <RootNamespace>Bylines.Messenger.Client</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
