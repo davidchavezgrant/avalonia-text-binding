@@ -16,7 +16,36 @@ public partial class MainViewMobile: UserControl
     public MainViewMobile()
     {
         InitializeComponent();
+        Animate();
     }
 
+    private async void Animate()
+    {
+        await Task.Delay(1000);
+        await this.RevealTitleAsync();
+        await Task.Delay(1000);
+        await this.RevealInputAsync();
+    }
 
+    private async Task RevealTitleAsync()
+    {
+        var title = this.Find<TextBlock>(nameof(this.Message));
+        if (title is null) return;
+
+        await Dispatcher.UIThread.InvokeAsync(async () =>
+                                              {
+                                                  title.Opacity = 1;
+                                              });
+    }
+
+    private async Task RevealInputAsync()
+    {
+        var input = this.Find<TextBox>(nameof(this.Input));
+        if (input is null) return;
+
+        await Dispatcher.UIThread.InvokeAsync(async () =>
+                                              {
+                                                  input.Opacity = .2;
+                                              });
+    }
 }
