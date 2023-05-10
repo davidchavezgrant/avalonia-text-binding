@@ -475,3 +475,7 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+.idea/.idea.Bylines/.idea/avalonia.xml
+
+.idea/.idea.Bylines/.idea/workspace.xml
