@@ -12,7 +12,7 @@
         <entry key="src/Beau.Client/Beau.Client/Views/MainViewMobile.axaml" value="src/Beau.Client/Beau.Client.Desktop/Beau.Client.Desktop.csproj" />
         <entry key="src/Beau.Client/Beau.Client/Views/MainWindow.axaml" value="src/Beau.Client/Beau.Client.Desktop/Beau.Client.Desktop.csproj" />
         <entry key="src/Beau.Client/Bylines.Messenger.Client/App.axaml" value="src/Beau.Client/Bylines.Messenger.Client.Browser/Bylines.Messenger.Client.Browser.csproj" />
-        <entry key="src/Beau.Client/Bylines.Messenger.Client/Views/MainViewMobile.axaml" value="src/Beau.Client/Bylines.Messenger.Client.Browser/Bylines.Messenger.Client.Browser.csproj" />
+        <entry key="src/Beau.Client/Bylines.Messenger.Client/Views/MainViewMobile.axaml" value="src/Beau.Client/Bylines.Messenger.Client.Desktop/Bylines.Messenger.Client.Desktop.csproj" />
         <entry key="src/Beau.Client/Views/MainWindow.axaml" value="src/Beau.Client/Beau.Client.csproj" />
       </map>
     </option>

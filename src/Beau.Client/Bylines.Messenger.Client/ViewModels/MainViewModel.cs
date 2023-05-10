@@ -10,7 +10,7 @@ public class MainViewModel : ViewModelBase
     public string Greeting { get; private set; } = "What's your name?";
 
     [Reactive]
-    public string Input { get; set; } = "";
+    public string Input { get; set; } = "Your name";
 
     [ObservableAsProperty]
     public bool SendButtonIsVisible { get; set; }
