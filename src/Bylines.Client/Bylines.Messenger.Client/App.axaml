@@ -1,6 +1,6 @@
 <Application xmlns="https://github.com/avaloniaui"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="using:Beau.Client"
+             xmlns:local="using:Bylines.Messenger.Client"
              xmlns:client="clr-namespace:Bylines.Messenger.Client"
              x:Class="Bylines.Messenger.Client.App"
              RequestedThemeVariant="Default">
