@@ -25,7 +25,9 @@ public class MainViewModel: ViewModelBase
     {
         var canSend = this.WhenAnyValue(x => x.Input)
                           .Select(x => !string.IsNullOrWhiteSpace(x) && x.Length > 0 && x != PLACEHOLDER)
-                          .StartWith(false);
+                          .ObserveOn(RxApp.MainThreadScheduler)
+                          .StartWith(false)
+                          .SubscribeOn(RxApp.MainThreadScheduler);
 
         canSend.ToPropertyEx(this, x => x.SendButtonIsVisible);
 
@@ -38,5 +40,4 @@ public class MainViewModel: ViewModelBase
     }
 
     public ICommand SendCommand { get; }
-
 }
