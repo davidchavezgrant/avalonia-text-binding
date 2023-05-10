@@ -7,13 +7,13 @@
              mc:Ignorable="d" d:DesignWidth="390" d:DesignHeight="844"
              x:Class="Beau.Client.Views.MainViewMobile"
              x:DataType="vm:MainViewModel"
-             Background="#ffe1e9">
+             Background="#131313">
     <Design.DataContext>
         <vm:MainViewModel />
     </Design.DataContext>
 
     <UserControl.Styles>
-        <Style Selector="Button.standard">
+        <Style Selector="TextBox.standard">
             <Setter Property="HorizontalAlignment" Value="Center" />
             <Setter Property="HorizontalContentAlignment" Value="Center" />
             <Setter Property="VerticalContentAlignment" Value="Center" />
@@ -53,43 +53,30 @@
         </Image>
 
 
-        <Border x:Name="SignIn" Grid.Row="1"
-                Background="White"
-                Width="250"
-                BorderBrush="Black"
-                BorderThickness="1"
-                CornerRadius="4"
-                Padding="0"
-                Opacity="0"
-                BoxShadow="5 5 15 2 #5393f4">
-            <Border.Transitions>
+        <Label Grid.Row="1"
+               x:Name="SignInButton"
+               Content="Sign In"
+               Opacity="0"
+               VerticalAlignment="Center"
+               HorizontalAlignment="Center">
+            <Label.Transitions>
                 <Transitions>
                     <DoubleTransition Property="Opacity" Duration="0:0:1" />
                 </Transitions>
-            </Border.Transitions>
-            <Button
-                x:Name="SignInButton"
-                Content="Sign In"
-                Opacity="0"
-                Classes="standard">
-                <Button.Transitions>
-                    <Transitions>
-                        <DoubleTransition Property="Opacity" Duration="0:0:1" />
-                    </Transitions>
-                </Button.Transitions>
-            </Button>
-        </Border>
-            <Button Grid.Row="2" x:Name="CreateAccountButton"
-                Content="Create Account"
-                Opacity="0"
-                Classes="standard">
-            <Button.Transitions>
+            </Label.Transitions>
+        </Label>
+        <TextBox Grid.Row="2"
+                 x:Name="CreateAccountButton"
+                 Opacity="0"
+                 Classes="standard">
+            <TextBox.Transitions>
                 <Transitions>
                     <DoubleTransition Property="Opacity" Duration="0:0:1" />
                 </Transitions>
-            </Button.Transitions>
-        </Button>
-        <Rectangle Grid.Row="3" Height="60" />
+            </TextBox.Transitions>
+        </TextBox>
+        <Rectangle Grid.Row="3"
+                   Height="60" />
     </Grid>
 
 </UserControl>

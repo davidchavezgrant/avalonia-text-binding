@@ -8,5 +8,5 @@
         x:Class="Beau.Client.Views.MainWindow"
         Icon="/Assets/avalonia-logo.ico"
         Title="Beau.Client">
-        <views:MainView />
+        <views:MainWindow />
 </Window>
