@@ -1,4 +1,5 @@
-﻿using System.Reactive.Linq;
+﻿using System.Reactive;
+using System.Reactive.Linq;
 using ReactiveUI;
 using ReactiveUI.Fody.Helpers;
 
@@ -21,5 +22,9 @@ public class MainViewModel: ViewModelBase
             .Select(x => !string.IsNullOrWhiteSpace(x) && x.Length > 0 && x != PLACEHOLDER)
             .StartWith(false)
             .ToPropertyEx(this, x => x.SendButtonIsVisible);
+
+        this.SendCommand = ReactiveCommand.Create(() => { });
     }
+
+    public ReactiveCommand<Unit, Unit> SendCommand { get; set;}
 }

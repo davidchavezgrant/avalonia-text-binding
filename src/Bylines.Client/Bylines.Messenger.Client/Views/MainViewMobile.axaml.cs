@@ -13,6 +13,7 @@ public partial class MainViewMobile: UserControl
             this.Input.GotFocus += (_, _) => this.Input.Text = string.Empty;
         }
 
+
         this.Animate();
     }
 

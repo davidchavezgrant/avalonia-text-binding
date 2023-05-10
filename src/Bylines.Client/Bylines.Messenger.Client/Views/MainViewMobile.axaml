@@ -30,7 +30,8 @@
                 </Transitions>
             </TextBox.Transitions>
         </TextBox>
-        <Button x:Name="SubmitButton" Grid.Row="1" HorizontalAlignment="Right" Background="Transparent">
+        <Button x:Name="SubmitButton" Grid.Row="1" HorizontalAlignment="Right" Background="Transparent" Command="{Binding SendCommand}">
+
             <Grid IsVisible="{Binding SendButtonIsVisible}">
                 <Ellipse Fill="White" Height="25" Width="25" HorizontalAlignment="Right" Margin="0 0 3 0" />
                 <Image Source="/Assets/send_icon.png" Height="15" Width="15" HorizontalAlignment="Right"
