@@ -16,6 +16,7 @@ public partial class MainViewMobile: UserControl
     public MainViewMobile()
     {
         InitializeComponent();
+        this.Input.GotFocus += (_, _) => this.Input.Text = string.Empty;
         Animate();
     }
 
