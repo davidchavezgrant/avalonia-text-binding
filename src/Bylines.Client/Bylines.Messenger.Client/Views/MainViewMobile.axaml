@@ -13,7 +13,7 @@
     </Design.DataContext>
 
     <Grid ColumnDefinitions="*" RowDefinitions="*, *" VerticalAlignment="Center" HorizontalAlignment="Center">
-        <TextBlock x:Name="Message" Text="{Binding Header}" HorizontalAlignment="Center" VerticalAlignment="Center"
+        <TextBlock x:Name="Message" Text="{Binding Header, Mode=TwoWay}" HorizontalAlignment="Center" VerticalAlignment="Center"
                    FontSize="25" Foreground="White" Opacity="0">
             <TextBlock.Transitions>
                 <Transitions>
@@ -31,11 +31,22 @@
                 </Transitions>
             </TextBox.Transitions>
         </TextBox>
-        <Button x:Name="SubmitButton" Grid.Row="1" HorizontalAlignment="Right" Background="Transparent"
-                Command="{Binding SendCommand}">
-            <Grid IsVisible="{Binding SendButtonIsVisible}">
-                <Ellipse Fill="White" Height="25" Width="25" HorizontalAlignment="Right" Margin="0 0 3 0" />
-                <Image Source="/Assets/send_icon.png" Height="15" Width="15" HorizontalAlignment="Right"
+        <Button x:Name="SubmitButton"
+                Grid.Row="1"
+                HorizontalAlignment="Right"
+                Background="Transparent"
+                IsVisible="{Binding SendButtonIsVisible, Mode=TwoWay}"
+                Command="{Binding SendCommand, Mode=TwoWay}">
+            <Grid>
+                <Ellipse Fill="White"
+                         Height="25"
+                         Width="25"
+                         HorizontalAlignment="Right"
+                         Margin="0 0 3 0" />
+                <Image Source="/Assets/send_icon.png"
+                       Height="15"
+                       Width="15"
+                       HorizontalAlignment="Right"
                        Margin="0 0 6 0" />
             </Grid>
         </Button>

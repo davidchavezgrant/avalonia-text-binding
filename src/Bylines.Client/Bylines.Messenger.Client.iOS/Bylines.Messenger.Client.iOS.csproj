@@ -21,7 +21,7 @@
         <ProjectReference Include="..\Bylines.Messenger.Client\Bylines.Messenger.Client.csproj" />
     </ItemGroup>
     <PropertyGroup>
-        <IncludeKeys Condition="'$(IncludeKeys)' == ''">true</IncludeKeys>
+        <IncludeKeys Condition="'$(IncludeKeys)' == ''">False</IncludeKeys>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net7.0-ios|AnyCPU' and $(IncludeKeys)">
         <RuntimeIdentifier>ios-arm64</RuntimeIdentifier>
