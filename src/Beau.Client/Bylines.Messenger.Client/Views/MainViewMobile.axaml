@@ -4,16 +4,17 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:vm="clr-namespace:Beau.Client.ViewModels"
              xmlns:views="clr-namespace:Beau.Client.Views"
+             xmlns:viewModels="clr-namespace:Bylines.Messenger.Client.ViewModels"
              mc:Ignorable="d" d:DesignWidth="390" d:DesignHeight="844"
              x:Class="Beau.Client.Views.MainViewMobile"
-             x:DataType="vm:MainViewModel"
+             x:DataType="viewModels:MainViewModel"
              Background="#131313">
     <Design.DataContext>
-        <vm:MainViewModel />
+        <viewModels:MainViewModel />
     </Design.DataContext>
 
       <Grid ColumnDefinitions="*" RowDefinitions="*, *" VerticalAlignment="Center" HorizontalAlignment="Center" >
-        <TextBlock x:Name="Message" Text="{Binding Greeting}" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="25" Foreground="White" Opacity="0">
+        <TextBlock x:Name="Message" Text="What's your name?" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="25" Foreground="White" Opacity="0">
             <TextBlock.Transitions>
                 <Transitions>
                     <DoubleTransition Property="Opacity" Duration="0:0:1" />

@@ -3,6 +3,8 @@ using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
 using Beau.Client.ViewModels;
 using Beau.Client.Views;
+using Bylines.Messenger.Client.ViewModels;
+
 
 namespace Beau.Client;
 
