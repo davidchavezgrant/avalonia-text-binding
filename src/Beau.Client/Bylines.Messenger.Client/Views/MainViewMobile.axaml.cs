@@ -1,15 +1,7 @@
 using System.Threading.Tasks;
-using Avalonia;
-using Avalonia.Controls;
-using Avalonia.Markup.Xaml;
-using Avalonia.Animation;
-using Avalonia.Threading;
-using Contacts;
-using Microsoft.Maui.Devices;
-using SkiaSharp;
 
 
-namespace Beau.Client.Views;
+namespace Bylines.Messenger.Client.Views;
 
 public partial class MainViewMobile: UserControl
 {
@@ -21,7 +13,7 @@ public partial class MainViewMobile: UserControl
             this.Input.GotFocus += (_, _) => this.Input.Text = string.Empty;
         }
 
-        Animate();
+        this.Animate();
     }
 
     private async void Animate()
@@ -34,7 +26,7 @@ public partial class MainViewMobile: UserControl
 
     private async Task RevealTitleAsync()
     {
-        var title = this.Find<TextBlock>(nameof(this.Message));
+        var title = this.Find<TextBlock>(nameof(Message));
         if (title is null) return;
 
         await Dispatcher.UIThread.InvokeAsync(async () =>
@@ -45,7 +37,7 @@ public partial class MainViewMobile: UserControl
 
     private async Task RevealInputAsync()
     {
-        var input = this.Find<TextBox>(nameof(this.Input));
+        var input = this.Find<TextBox>(nameof(Input));
         if (input is null) return;
 
         await Dispatcher.UIThread.InvokeAsync(async () =>

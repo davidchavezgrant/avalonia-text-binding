@@ -1,4 +1,4 @@
-﻿namespace Beau.Contracts;
+﻿namespace Bylines.Messenger.Contracts;
 public class Class1
 {
 

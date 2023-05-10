@@ -1,12 +1,12 @@
 ﻿using Android.App;
 using Android.Content;
 using Android.OS;
-using Application = Android.App.Application;
-using Avalonia;
 using Avalonia.Android;
 using Avalonia.ReactiveUI;
+using Application = Android.App.Application;
 
-namespace Beau.Client.Android;
+
+namespace Bylines.Messenger.Client.Android;
 
 [Activity(Theme = "@style/MyTheme.Splash", MainLauncher = true, NoHistory = true)]
 public class SplashActivity : AvaloniaSplashActivity<App>
@@ -26,6 +26,6 @@ public class SplashActivity : AvaloniaSplashActivity<App>
     {
         base.OnResume();
 
-        StartActivity(new Intent(Application.Context, typeof(MainActivity)));
+        this.StartActivity(new Intent(Application.Context, typeof(MainActivity)));
     }
 }

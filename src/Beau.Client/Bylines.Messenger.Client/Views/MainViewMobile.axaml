@@ -2,11 +2,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:vm="clr-namespace:Beau.Client.ViewModels"
              xmlns:views="clr-namespace:Beau.Client.Views"
              xmlns:viewModels="clr-namespace:Bylines.Messenger.Client.ViewModels"
              mc:Ignorable="d" d:DesignWidth="390" d:DesignHeight="844"
-             x:Class="Beau.Client.Views.MainViewMobile"
+             x:Class="Bylines.Messenger.Client.Views.MainViewMobile"
              x:DataType="viewModels:MainViewModel"
              Background="#131313">
     <Design.DataContext>

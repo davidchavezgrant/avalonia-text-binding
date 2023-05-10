@@ -1,8 +1,7 @@
-﻿using System;
-using Avalonia;
-using Avalonia.ReactiveUI;
+﻿using Avalonia.ReactiveUI;
 
-namespace Beau.Client.Desktop;
+
+namespace Bylines.Messenger.Client.Desktop;
 
 class Program
 {

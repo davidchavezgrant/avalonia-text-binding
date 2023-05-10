@@ -1,5 +1,4 @@
 ﻿using System.Reactive.Linq;
-using Beau.Client.ViewModels;
 using ReactiveUI;
 using ReactiveUI.Fody.Helpers;
 

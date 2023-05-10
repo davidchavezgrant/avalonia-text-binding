@@ -1,6 +1,7 @@
 using UIKit;
 
-namespace Beau.Client.iOS;
+
+namespace Bylines.Messenger.Client.iOS;
 
 public class Application
 {

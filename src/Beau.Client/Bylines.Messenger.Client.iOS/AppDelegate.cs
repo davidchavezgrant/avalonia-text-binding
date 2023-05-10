@@ -1,12 +1,9 @@
-using Foundation;
-using UIKit;
-using Avalonia;
-using Avalonia.Controls;
 using Avalonia.iOS;
-using Avalonia.Media;
 using Avalonia.ReactiveUI;
+using Foundation;
 
-namespace Beau.Client.iOS;
+
+namespace Bylines.Messenger.Client.iOS;
 
 // The UIApplicationDelegate for the application. This class is responsible for launching the 
 // User Interface of the application, as well as listening (and optionally responding) to 

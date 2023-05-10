@@ -1,6 +1,4 @@
-using Avalonia.Controls;
-
-namespace Beau.Client.Views;
+namespace Bylines.Messenger.Client.Views;
 
 public partial class MainWindow : Window
 {

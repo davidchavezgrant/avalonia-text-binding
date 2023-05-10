@@ -1,6 +1,7 @@
 ﻿using ReactiveUI;
 
-namespace Beau.Client.ViewModels;
+
+namespace Bylines.Messenger.Client.ViewModels;
 
 public class ViewModelBase : ReactiveObject
 {

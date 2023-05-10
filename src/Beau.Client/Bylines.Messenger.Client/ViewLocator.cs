@@ -1,9 +1,7 @@
-using System;
-using Avalonia.Controls;
-using Avalonia.Controls.Templates;
-using Beau.Client.ViewModels;
+using Bylines.Messenger.Client.ViewModels;
 
-namespace Beau.Client;
+
+namespace Bylines.Messenger.Client;
 
 public class ViewLocator : IDataTemplate
 {
