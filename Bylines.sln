@@ -17,9 +17,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bylines.Messenger.Client.iO
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bylines.Messenger.Client", "src\Beau.Client\Bylines.Messenger.Client\Bylines.Messenger.Client.csproj", "{532A8D90-7700-4A53-ABFC-6BCD1B858CA4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Beau.Api", "src\Beau.Api\Beau.Api.csproj", "{E146CED2-EBD4-4253-8F71-2CB1963C36E1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bylines.Messenger.Api", "src\Bylines.Messenger.Api\Bylines.Messenger.Api.csproj", "{E146CED2-EBD4-4253-8F71-2CB1963C36E1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Beau.Contracts", "src\Beau.Contracts\Beau.Contracts.csproj", "{C15D60E8-2955-4CF9-925A-E77444266D83}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bylines.Messenger.Contracts", "src\Bylines.Messenger.Contracts\Bylines.Messenger.Contracts.csproj", "{C15D60E8-2955-4CF9-925A-E77444266D83}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -28,7 +28,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\..\Beau.Contracts\Beau.Contracts.csproj" />
+        <ProjectReference Include="..\..\Bylines.Messenger.Contracts\Bylines.Messenger.Contracts.csproj" />
     </ItemGroup>
 
     <ItemGroup>
