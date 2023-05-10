@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Reactive;
 using System.Reactive.Linq;
+using System.Windows.Input;
 using ReactiveUI;
 using ReactiveUI.Fody.Helpers;
 
@@ -22,16 +23,20 @@ public class MainViewModel: ViewModelBase
 
     public MainViewModel()
     {
-        this.WhenAnyValue(x => x.Input)
-            .Select(x => !string.IsNullOrWhiteSpace(x) && x.Length > 0 && x != PLACEHOLDER)
-            .StartWith(false)
-            .ToPropertyEx(this, x => x.SendButtonIsVisible);
+        var canSend = this.WhenAnyValue(x => x.Input)
+                          .Select(x => !string.IsNullOrWhiteSpace(x) && x.Length > 0 && x != PLACEHOLDER)
+                          .StartWith(false);
 
-        this.SendCommand = ReactiveCommand.Create(() =>
-                                                  {
-                                                      this.Header = $"Hello, {this.Input}!";
-                                                  });
+        canSend.ToPropertyEx(this, x => x.SendButtonIsVisible);
+
+        this.SendCommand = ReactiveCommand.Create<Unit, Unit>((_) =>
+                                                              {
+                                                                  this.Header = $"Hello, {this.Input}!";
+                                                                  return Unit.Default;
+                                                              },
+                                                              canSend);
     }
 
-    public ReactiveCommand<Unit, Unit> SendCommand { get; set; }
+    public ICommand SendCommand { get; }
+
 }

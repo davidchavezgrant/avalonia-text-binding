@@ -22,7 +22,8 @@
             </TextBlock.Transitions>
         </TextBlock>
 
-        <TextBox x:Name="Input" Text="{Binding Input}" Grid.Row="1" CornerRadius="12" Width="350" Background="#FFFFFF"
+        <TextBox x:Name="Input" Text="{Binding Input, Mode=TwoWay}" Grid.Row="1" CornerRadius="12" Width="350"
+                 Background="#FFFFFF"
                  Margin="0 10 0 10" Opacity="0" Foreground="White" VerticalContentAlignment="Center">
             <TextBox.Transitions>
                 <Transitions>
