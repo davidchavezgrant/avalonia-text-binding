@@ -7,7 +7,7 @@
         <ProvisioningType>automatic</ProvisioningType>
         <Nullable>enable</Nullable>
         <RuntimeIdentifier>iossimulator-x64</RuntimeIdentifier>
-        <ApplicationId>by.lines.beau</ApplicationId>
+        <ApplicationId>by.lines.messenger</ApplicationId>
         <UseMaui>true</UseMaui>
         <UseMauiEsssentials>true</UseMauiEsssentials>
         <RootNamespace>Bylines.Messenger.Client.iOS</RootNamespace>
@@ -21,21 +21,21 @@
         <ProjectReference Include="..\Bylines.Messenger.Client\Bylines.Messenger.Client.csproj" />
     </ItemGroup>
     <PropertyGroup>
-        <IncludeKeys Condition="'$(IncludeKeys)' == ''">false</IncludeKeys>
+        <IncludeKeys Condition="'$(IncludeKeys)' == ''">true</IncludeKeys>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net7.0-ios|AnyCPU' and $(IncludeKeys)">
         <RuntimeIdentifier>ios-arm64</RuntimeIdentifier>
         <!-- Only needed when you have a need for entitlements -->
         <!-- <CodesignEntitlement>Entitlements.plist</CodesignEntitlement> -->
         <CodesignKey>Apple Distribution: Bylines, Inc. (K4ACR28WR6)</CodesignKey>
-        <CodesignProvision>beau-dist</CodesignProvision>
+        <CodesignProvision>messenger-dist</CodesignProvision>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net7.0-ios|AnyCPU' and $(IncludeKeys)">
         <RuntimeIdentifier>ios-arm64</RuntimeIdentifier>
         <!-- Only needed when you have a need for entitlements -->
         <!-- <CodesignEntitlement>Entitlements.plist</CodesignEntitlement> -->
         <CodesignKey>Apple Development: David Grant (ZWBR857W42)</CodesignKey>
-        <CodesignProvision>beau-dev</CodesignProvision>
+        <CodesignProvision>messenger-dev</CodesignProvision>
     </PropertyGroup>
 
 </Project>
